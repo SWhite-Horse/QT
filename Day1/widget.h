@@ -5,7 +5,7 @@
 
 class Widget : public QWidget
 {
-    Q_OBJECT
+    Q_OBJECT  //** Q_OBJECT 是一个宏，它使类中可以使用信号和槽的机制 **//
 
 public:
     Widget(QWidget *parent = nullptr);
