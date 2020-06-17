@@ -34,7 +34,7 @@ Widget::~Widget()
 {
 }
 
-//命名规范 ： 大写的手
+//命名规范 ： 大写的首字母
 //快捷键   ： Ctrl+B 编译  Ctrl+/ 注释
 //整行移动 ： Ctrl+Shift+↑
 //自动对齐 ： Ctrl+I
