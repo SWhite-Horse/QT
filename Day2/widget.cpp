@@ -39,7 +39,8 @@ Widget::Widget(QWidget *parent)
 
     //** 断开信号 **//
     disconnect(btn,&QPushButton::clicked,this,&Widget::ClasOver);
-
+    
+    //** 同一个信号和槽的参数的类型必须一一对应，但信号的参数个数可以多于槽的参数个数，信号和槽都可以多对多 **//
 }
 void Widget::ClasOver(){
 
