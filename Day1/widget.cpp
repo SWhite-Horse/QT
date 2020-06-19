@@ -28,6 +28,8 @@ Widget::Widget(QWidget *parent)
     //** 窗口标题设置 **//
     setWindowTitle("Data");
 
+    //** connect(信号发送者，发送的信号，信号的接收者，槽（slot）（处理）),注意都是指针 **//
+    connect(btn,&QPushButton::clicked,this,&QWidget::close);
 }
 
 Widget::~Widget()
