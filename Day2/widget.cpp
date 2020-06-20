@@ -38,7 +38,26 @@ Widget::Widget(QWidget *parent)
     connect(btn,&QPushButton::clicked,Mk,TeacherSingalV);
 
     //** 断开信号 **//
-    disconnect(btn,&QPushButton::clicked,this,&Widget::ClasOver);
+    //disconnect(btn,&QPushButton::clicked,this,&Widget::ClasOver);
+
+    //** Lambda 表达式 **//
+    //** 说明：①形式是[]()mutable->返回值类型{};最后再加一个()是在调用这个匿名函数
+    //**      ②[]里面可以是 = & this a &a,()是参数列表，{}是函数主体（详情用法上网搜一下）
+    //**      ③Lambda的存在方便了代码的书写，其一个重要应用是在connect里面作为槽函数，如下示例
+    //**      ④mutable一般省略，但是当我们通过值传递进来参数，而且需要修改它时，就要加，
+    //**        而且参数列表不能省略，且注意，这里修改的是值传递之后的复制品，而非参数本体
+    //**      ⑤->返回值类型，只在需要的时候书写，一般和需要它返回值的参数的类型保持一致
+    //**      ⑥
+    [=](){
+        btn->setText("下课");
+    }();
+    QPushButton *btn3=new QPushButton(this); //切勿忘记设置*parent
+    btn3->setText("关闭");
+    btn3->move(100,0);
+    connect(btn3,&QPushButton::clicked,this,[=](){
+        close();
+        //btn->setText("上课");
+    });  //且当参数三为this，四为Lambda时，this可以省略
 
 }
 void Widget::ClasOver(){
