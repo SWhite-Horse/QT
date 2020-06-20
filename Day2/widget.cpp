@@ -4,7 +4,7 @@
 
 //** 需求 ：下课老师说饿了，学生响应，请吃饭
 //** 类：Teacher，Student
-//类的创建
+//** 类的创建
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
