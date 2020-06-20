@@ -38,6 +38,7 @@ Widget::Widget(QWidget *parent)
     connect(btn,&QPushButton::clicked,Mk,TeacherSingalV);
 
     //** 断开信号 **//
+<<<<<<< HEAD
     //disconnect(btn,&QPushButton::clicked,this,&Widget::ClasOver);
 
     //** Lambda 表达式 **//
@@ -59,6 +60,11 @@ Widget::Widget(QWidget *parent)
         //btn->setText("上课");
     });  //且当参数三为this，四为Lambda时，this可以省略
 
+=======
+    disconnect(btn,&QPushButton::clicked,this,&Widget::ClasOver);
+    
+    //** 同一个信号和槽的参数的类型必须一一对应，但信号的参数个数可以多于槽的参数个数，信号和槽都可以多对多 **//
+>>>>>>> 42db326005c8343398baf1c0dd38c634a274da43
 }
 void Widget::ClasOver(){
 
