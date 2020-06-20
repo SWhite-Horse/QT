@@ -38,7 +38,6 @@ Widget::Widget(QWidget *parent)
     connect(btn,&QPushButton::clicked,Mk,TeacherSingalV);
 
     //** 断开信号 **//
-<<<<<<< HEAD
     //disconnect(btn,&QPushButton::clicked,this,&Widget::ClasOver);
 
     //** Lambda 表达式 **//
@@ -48,7 +47,7 @@ Widget::Widget(QWidget *parent)
     //**      ④mutable一般省略，但是当我们通过值传递进来参数，而且需要修改它时，就要加，
     //**        而且参数列表不能省略，且注意，这里修改的是值传递之后的复制品，而非参数本体
     //**      ⑤->返回值类型，只在需要的时候书写，一般和需要它返回值的参数的类型保持一致
-    //**      ⑥
+    //**      ⑥s
     [=](){
         btn->setText("下课");
     }();
@@ -60,11 +59,9 @@ Widget::Widget(QWidget *parent)
         //btn->setText("上课");
     });  //且当参数三为this，四为Lambda时，this可以省略
 
-=======
     disconnect(btn,&QPushButton::clicked,this,&Widget::ClasOver);
     
     //** 同一个信号和槽的参数的类型必须一一对应，但信号的参数个数可以多于槽的参数个数，信号和槽都可以多对多 **//
->>>>>>> 42db326005c8343398baf1c0dd38c634a274da43
 }
 void Widget::ClasOver(){
 
