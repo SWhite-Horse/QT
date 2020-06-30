@@ -1,5 +1,5 @@
 # my-study
-# Day two test
+# Day two
 2	创建第一个gt程序
 	2.1	点击创建项目后，选择项目路径以及给项目起名称
 	2.2	名称-不能有中文不能有空格。
@@ -70,8 +70,8 @@
 10	Q14 版本写法* 
 	10.1	 connect( 信号的发送者，发送的信号 SIGNAL(信号) ,信号接受者，槽函数
 		 SLOT槽函数) )
-	10.2优点参数直观。
-	10.3缺点编译器不会检测参数类型。
+	10.2	优点参数直观。
+	10.3	缺点编译器不会检测参数类型。
 11	Lambda 表达式。
 	11.1	标识符匿名函数 。
 		11.1.1	 =值传递。
@@ -80,4 +80,32 @@
 	11.3	 {}实现体。
 	11.4 	 mutable 修饰值传递变量，可以修改拷贝出的数据,改变不了本体。
 	11.5	 返回值 [ ]()>int{}
+
+#Day Three
+
+1 	QMainWindow
+	1.1	菜单栏 最多有一个。
+		1.1.1 	 QMenuBar* bar = MenuBar();
+		1.1.2	 setMenuBar(bar) 。
+		1.1.3	 QMenu * fileMenu = bar > addMenu("文件")创建菜单。
+		1.1.4	 QAction *newAction = fleMenu ->addAction'新建");创建菜单项+
+		1.1.5	添加分割线 fileMenu->addSeparator();
+	1.2	工具栏 可以有多个。
+		1.2.1 	gToolBar * toolbar = new gToolBar(this);
+		1.2.2 	addToolBar( 默认停靠区域，toolbar ); Qt::LeftToolBarArea
+		1.2.3	设置后期停靠区域， 设置浮动，设置移动。
+		1.2.4	添加菜单项或者添加小控件。
+	1.3	状态栏最多一个。
+		1.3.1 	QStatusBar* stBar= statusBar0;+
+		1.3.2	设置到窗口中setStatusBar(stBar);+u
+		1.3.3	stBar->addWidgetlael);放左侧信息。
+		1.3.4	stBar->addPermanentWidget/label2);放右侧信息。
+	1.4	铆接部件浮动窗口可以多个。
+		1.4.1 	QDockWidget 。
+		1.4.2 	addDockWidget( 默认停靠区域,浮动窗口指针)。
+		1.4.3	设置后期停靠区域w
+	1.5	设置核心部件 只能一个
+		1.5.1 	setCentralWidget(edit);
+
+
 
