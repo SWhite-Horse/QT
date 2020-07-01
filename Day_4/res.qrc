@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/BP">
+        <file>ss.png</file>
+    </qresource>
+</RCC>
