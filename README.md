@@ -106,6 +106,36 @@
 		1.4.3	设置后期停靠区域w
 	1.5	设置核心部件 只能一个
 		1.5.1 	setCentralWidget(edit);
+2	资源文件。
+	2.1	将图片文件 拷贝到项目位置下。
+	2.2	右键项目~>添加新文件 - Qt-> Qt recourse File - >给资源文件起名。
+	2.3 	res 生成res.grc 
+	2.4	open in editor编辑资源。
+	2.5	添加前缀 添加文件。
+	2.6	使用“:+前缀名+文件名"。
+3	对话框+
+	3.1	分类:。
+		3.1.1	模态对话框不可以对其他窗口进行操作 阻塞。
+			3.1.1.1 	QDialog dgfthis)u
+			3.1.1.2 	dlg.exec();+
+		3.1.2	非模态对话框可以对其他窗口进行操作。
+			3.1.2.1	防止一闪而过创建到堆区+
+			3.1.2.2 	QDialog * dlg = new aDialog(this)
+			3.1.2.3 	dlg->show();
+			3.1.2.4 	dag2->settribtetEt:WA DeleteOnClose)//55 号属性
+	3.2	标准对话框 -消息对话框+
+		3.2.1	QMessageBox 静态成员函数创建对话框+
+		3.2.2	错误、信息、提问、警告+
+		3.2.3	参数1父亲参数2标题参数3显示内容参数4按键类型参数5
+			默认关联回车按键+
+		3.2.4	返回值也是StandardButton类型，利用返回值判断用户的输入。
+	3.3	其他标准对话框。
+		3.3.1	颜色对话框QColorDialog:: getColor。
+		3.3.2	文件对话框QFileDialog:: getOpenFileName父亲， 标题，默认路径，过滤
+			文件)
+		3.3.3	字体对话框QFontDialog:: getFont 。
+	3.4
+
 
 
 
