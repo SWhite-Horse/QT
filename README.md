@@ -172,6 +172,17 @@
 			5.4.3.1 	ui->tableWidget- >setRowCount(5);
 		5.4.4	ÉèÖÃÕıÎÄ
 			5.4.4.1 	ui->tableWidget->setltem(0,0, new QTableWidgtltem"ÑÇÉª));
+	5.5	ÆäËû¿Ø¼ş½éÉÜ
+		5.5.1 	stackedWidgetÕ»¿Ø¼ş
+			5.5.1.1 	ui->stackedWidget->setCurentIndex(1)
+		5.5.2	ÏÂÀ­¿ò
+			5.5.2.1 	ui->comboBox->addltem(±¼³Û")
+		5.5.3 	QLabel ÏÔÊ¾Í¼Æ¬
+			5.5.3.1 	ui->Ibl. Jmage->setPixmap(QPixmap(":/mag/buttrflygng")
+		5.5.4 	QLabel ÏÔÊ¾¶¯Í¼gif Í¼Æ¬
+			5.5.4.1 	ui->blL_movie->setMovie(movie);
+5.5.4.2 movie->start);+
+
 
 
 
