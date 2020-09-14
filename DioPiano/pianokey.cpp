@@ -27,10 +27,8 @@ int PianoKey::SetVoice(int file_num){
 };
 
 void PianoKey::VoicePlay(void){
-    qDebug()<<Is_tenuto<<" key";
-    if(!Is_tenuto) {V_short->play();qDebug()<<"short";}
-    else {V_long->play();qDebug()<<"long";}
-    qDebug()<<"fin";
+    if(!Is_tenuto) V_short->play();
+    else V_long->play();
 };
 
 

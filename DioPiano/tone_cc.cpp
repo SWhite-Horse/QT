@@ -3,13 +3,13 @@
 
 Tone_Cc::Tone_Cc()
 {
-    Tab_Key.SetVoice(28);
-    Q_Key.SetVoice(30);
-    W_Key.SetVoice(32);
-    E_Key.SetVoice(31);
-    R_Key.SetVoice(35);
-    T_Key.SetVoice(37);
-    Y_Key.SetVoice(39);
+    Tab_Key.SetVoice(29);
+    Q_Key.SetVoice(31);
+    W_Key.SetVoice(33);
+    E_Key.SetVoice(34);
+    R_Key.SetVoice(36);
+    T_Key.SetVoice(38);
+    Y_Key.SetVoice(40);
 }
 
 void Tone_Cc::Tab_KeyPlay(int time){
@@ -30,7 +30,6 @@ void Tone_Cc::W_KeyPlay(int time){
 void Tone_Cc::E_KeyPlay(int time){
     E_Key.VoicePlay();
     E_Key.RecordTime(time);
-    qDebug()<<"Tone_Cc";
 }
 
 void Tone_Cc::R_KeyPlay(int time){

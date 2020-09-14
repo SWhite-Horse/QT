@@ -11,6 +11,7 @@
 class Tone_Cc : public Tone
 {
 public:
+    int Level=1;
     Tone_Cc();
 
     void Tab_KeyPlay(int);

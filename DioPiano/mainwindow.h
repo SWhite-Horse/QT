@@ -26,9 +26,9 @@ class MainWindow : public QMainWindow
 public:
 
     //** 音调定义区 **//
-    Tone *c;
-    Tone_C cc;
-    Tone_Cc ccc;
+    Tone *tone;
+    Tone_C c;
+    Tone_Cc cc;
 
 
     QFile file;
@@ -38,11 +38,17 @@ public:
 
     MainWindow(QWidget *parent = nullptr);
 
-    void TenutoChange(void); //** 改变延音状态
+    //** 按键函数区 **//
+
     void keyPressEvent(QKeyEvent *event);
     bool eventFilter(QObject * obj,QEvent * event); //** 特别处理Tab和Space
    // void keyReleaseEvent(QKeyEvent *event);
-    void Record(QString);
+
+    //** 音频函数区 **//
+
+    void TenutoChange(void); //** 改变延音状态
+    void Record(QString); //** 录音函数接口
+    void StopRecord();
 
     ~MainWindow();
 

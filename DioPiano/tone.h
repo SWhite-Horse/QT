@@ -8,6 +8,7 @@
 class Tone
 {
 public:
+    int Level=0; //** 用于改变音调
     PianoKey  Q_Key,W_Key,E_Key,R_Key,T_Key,Y_Key,U_Key,
               I_Key,O_Key,P_Key,BracketLeft_Key,
               Backslash_Key,BracketRight_Key,Tab_Key,

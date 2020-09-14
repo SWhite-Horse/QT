@@ -11,6 +11,8 @@
 class Tone_C : public Tone
 {
 public:
+    int Level=0;
+
     Tone_C();
 //    void AsciiTilde_KeyPlay(int);
 //    void Key1_Play(int);

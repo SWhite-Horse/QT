@@ -1,180 +1,180 @@
 <RCC>
     <qresource prefix="/">
         <file>voice/1.wav</file>
-        <file>voice/2.wav</file>
-        <file>voice/3.wav</file>
-        <file>voice/4.wav</file>
-        <file>voice/5.wav</file>
-        <file>voice/6.wav</file>
-        <file>voice/7.wav</file>
-        <file>voice/8.wav</file>
-        <file>voice/9.wav</file>
-        <file>voice/10.wav</file>
-        <file>voice/11.wav</file>
-        <file>voice/12.wav</file>
-        <file>voice/13.wav</file>
-        <file>voice/14.wav</file>
-        <file>voice/15.wav</file>
-        <file>voice/16.wav</file>
-        <file>voice/17.wav</file>
-        <file>voice/18.wav</file>
-        <file>voice/19.wav</file>
-        <file>voice/20.wav</file>
-        <file>voice/21.wav</file>
-        <file>voice/22.wav</file>
-        <file>voice/23.wav</file>
-        <file>voice/24.wav</file>
-        <file>voice/25.wav</file>
-        <file>voice/26.wav</file>
-        <file>voice/27.wav</file>
-        <file>voice/28.wav</file>
-        <file>voice/29.wav</file>
-        <file>voice/30.wav</file>
-        <file>voice/31.wav</file>
-        <file>voice/32.wav</file>
-        <file>voice/33.wav</file>
-        <file>voice/34.wav</file>
-        <file>voice/35.wav</file>
-        <file>voice/36.wav</file>
-        <file>voice/37.wav</file>
-        <file>voice/38.wav</file>
-        <file>voice/39.wav</file>
-        <file>voice/41.wav</file>
-        <file>voice/43.wav</file>
-        <file>voice/44.wav</file>
-        <file>voice/45.wav</file>
-        <file>voice/46.wav</file>
-        <file>voice/47.wav</file>
-        <file>voice/48.wav</file>
-        <file>voice/49.wav</file>
-        <file>voice/50.wav</file>
-        <file>voice/51.wav</file>
-        <file>voice/52.wav</file>
-        <file>voice/53.wav</file>
-        <file>voice/54.wav</file>
-        <file>voice/55.wav</file>
-        <file>voice/56.wav</file>
-        <file>voice/57.wav</file>
-        <file>voice/58.wav</file>
-        <file>voice/59.wav</file>
-        <file>voice/60.wav</file>
-        <file>voice/61.wav</file>
-        <file>voice/62.wav</file>
-        <file>voice/63.wav</file>
-        <file>voice/64.wav</file>
-        <file>voice/65.wav</file>
-        <file>voice/66.wav</file>
-        <file>voice/67.wav</file>
-        <file>voice/68.wav</file>
-        <file>voice/69.wav</file>
-        <file>voice/70.wav</file>
-        <file>voice/71.wav</file>
-        <file>voice/72.wav</file>
-        <file>voice/73.wav</file>
-        <file>voice/74.wav</file>
-        <file>voice/75.wav</file>
-        <file>voice/76.wav</file>
-        <file>voice/77.wav</file>
-        <file>voice/78.wav</file>
-        <file>voice/79.wav</file>
-        <file>voice/80.wav</file>
-        <file>voice/81.wav</file>
-        <file>voice/82.wav</file>
-        <file>voice/83.wav</file>
-        <file>voice/84.wav</file>
-        <file>voice/85.wav</file>
-        <file>voice/86.wav</file>
-        <file>voice/87.wav</file>
-        <file>voice/88.wav</file>
-        <file>voice/40.wav</file>
-        <file>voice/42.wav</file>
         <file>voice/1_.wav</file>
+        <file>voice/2.wav</file>
         <file>voice/2_.wav</file>
+        <file>voice/3.wav</file>
         <file>voice/3_.wav</file>
+        <file>voice/4.wav</file>
         <file>voice/4_.wav</file>
+        <file>voice/5.wav</file>
         <file>voice/5_.wav</file>
+        <file>voice/6.wav</file>
         <file>voice/6_.wav</file>
+        <file>voice/7.wav</file>
         <file>voice/7_.wav</file>
+        <file>voice/8.wav</file>
         <file>voice/8_.wav</file>
+        <file>voice/9.wav</file>
         <file>voice/9_.wav</file>
+        <file>voice/10.wav</file>
         <file>voice/10_.wav</file>
+        <file>voice/11.wav</file>
         <file>voice/11_.wav</file>
+        <file>voice/12.wav</file>
         <file>voice/12_.wav</file>
+        <file>voice/13.wav</file>
         <file>voice/13_.wav</file>
+        <file>voice/14.wav</file>
         <file>voice/14_.wav</file>
+        <file>voice/15.wav</file>
         <file>voice/15_.wav</file>
+        <file>voice/16.wav</file>
         <file>voice/16_.wav</file>
+        <file>voice/17.wav</file>
         <file>voice/17_.wav</file>
+        <file>voice/18.wav</file>
         <file>voice/18_.wav</file>
+        <file>voice/19.wav</file>
         <file>voice/19_.wav</file>
+        <file>voice/20.wav</file>
         <file>voice/20_.wav</file>
+        <file>voice/21.wav</file>
         <file>voice/21_.wav</file>
+        <file>voice/22.wav</file>
         <file>voice/22_.wav</file>
+        <file>voice/23.wav</file>
         <file>voice/23_.wav</file>
+        <file>voice/24.wav</file>
         <file>voice/24_.wav</file>
+        <file>voice/25.wav</file>
         <file>voice/25_.wav</file>
+        <file>voice/26.wav</file>
         <file>voice/26_.wav</file>
+        <file>voice/27.wav</file>
         <file>voice/27_.wav</file>
+        <file>voice/28.wav</file>
         <file>voice/28_.wav</file>
+        <file>voice/29.wav</file>
         <file>voice/29_.wav</file>
+        <file>voice/30.wav</file>
         <file>voice/30_.wav</file>
+        <file>voice/31.wav</file>
         <file>voice/31_.wav</file>
+        <file>voice/32.wav</file>
         <file>voice/32_.wav</file>
+        <file>voice/33.wav</file>
         <file>voice/33_.wav</file>
+        <file>voice/34.wav</file>
         <file>voice/34_.wav</file>
+        <file>voice/35.wav</file>
         <file>voice/35_.wav</file>
+        <file>voice/36.wav</file>
         <file>voice/36_.wav</file>
+        <file>voice/37.wav</file>
         <file>voice/37_.wav</file>
+        <file>voice/38.wav</file>
         <file>voice/38_.wav</file>
+        <file>voice/39.wav</file>
         <file>voice/39_.wav</file>
+        <file>voice/40.wav</file>
         <file>voice/40_.wav</file>
+        <file>voice/41.wav</file>
         <file>voice/41_.wav</file>
+        <file>voice/42.wav</file>
         <file>voice/42_.wav</file>
+        <file>voice/43.wav</file>
         <file>voice/43_.wav</file>
+        <file>voice/44.wav</file>
         <file>voice/44_.wav</file>
+        <file>voice/45.wav</file>
         <file>voice/45_.wav</file>
+        <file>voice/46.wav</file>
         <file>voice/46_.wav</file>
+        <file>voice/47.wav</file>
         <file>voice/47_.wav</file>
+        <file>voice/48.wav</file>
         <file>voice/48_.wav</file>
+        <file>voice/49.wav</file>
         <file>voice/49_.wav</file>
+        <file>voice/50.wav</file>
         <file>voice/50_.wav</file>
+        <file>voice/51.wav</file>
         <file>voice/51_.wav</file>
+        <file>voice/52.wav</file>
         <file>voice/52_.wav</file>
+        <file>voice/53.wav</file>
         <file>voice/53_.wav</file>
+        <file>voice/54.wav</file>
         <file>voice/54_.wav</file>
+        <file>voice/55.wav</file>
         <file>voice/55_.wav</file>
+        <file>voice/56.wav</file>
         <file>voice/56_.wav</file>
+        <file>voice/57.wav</file>
         <file>voice/57_.wav</file>
+        <file>voice/58.wav</file>
         <file>voice/58_.wav</file>
+        <file>voice/59.wav</file>
         <file>voice/59_.wav</file>
+        <file>voice/60.wav</file>
         <file>voice/60_.wav</file>
+        <file>voice/61.wav</file>
         <file>voice/61_.wav</file>
+        <file>voice/62.wav</file>
         <file>voice/62_.wav</file>
+        <file>voice/63.wav</file>
         <file>voice/63_.wav</file>
+        <file>voice/64.wav</file>
         <file>voice/64_.wav</file>
+        <file>voice/65.wav</file>
         <file>voice/65_.wav</file>
+        <file>voice/66.wav</file>
         <file>voice/66_.wav</file>
+        <file>voice/67.wav</file>
         <file>voice/67_.wav</file>
+        <file>voice/68.wav</file>
         <file>voice/68_.wav</file>
+        <file>voice/69.wav</file>
         <file>voice/69_.wav</file>
+        <file>voice/70.wav</file>
         <file>voice/70_.wav</file>
+        <file>voice/71.wav</file>
         <file>voice/71_.wav</file>
+        <file>voice/72.wav</file>
         <file>voice/72_.wav</file>
+        <file>voice/73.wav</file>
         <file>voice/73_.wav</file>
+        <file>voice/74.wav</file>
         <file>voice/74_.wav</file>
+        <file>voice/75.wav</file>
         <file>voice/75_.wav</file>
+        <file>voice/76.wav</file>
         <file>voice/76_.wav</file>
+        <file>voice/77.wav</file>
         <file>voice/77_.wav</file>
+        <file>voice/78.wav</file>
         <file>voice/78_.wav</file>
+        <file>voice/79.wav</file>
         <file>voice/79_.wav</file>
+        <file>voice/80.wav</file>
         <file>voice/80_.wav</file>
+        <file>voice/81.wav</file>
         <file>voice/81_.wav</file>
+        <file>voice/82.wav</file>
         <file>voice/82_.wav</file>
+        <file>voice/83.wav</file>
         <file>voice/83_.wav</file>
+        <file>voice/84.wav</file>
         <file>voice/84_.wav</file>
+        <file>voice/85.wav</file>
         <file>voice/85_.wav</file>
+        <file>voice/86.wav</file>
         <file>voice/86_.wav</file>
+        <file>voice/87.wav</file>
         <file>voice/87_.wav</file>
+        <file>voice/88.wav</file>
         <file>voice/88_.wav</file>
     </qresource>
 </RCC>

@@ -12,16 +12,17 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    tim=new QElapsedTimer;
-    tim->start();
+
     setFocusPolicy(Qt::StrongFocus); //** 获得焦点
     this->installEventFilter(this);
 
-    c=&ccc;
-
-    file.setFileName("myfile.txt");
-    file.open(QIODevice::WriteOnly);
+    Record("myfile.txt");
+    tone=&c; //**初始化为C大调
 }
+
+//***********************************************//
+//***************** Press处理 ********************//
+//***********************************************//
 
 bool MainWindow::eventFilter(QObject * obj,QEvent * event){
 
@@ -29,28 +30,44 @@ bool MainWindow::eventFilter(QObject * obj,QEvent * event){
     {
         QTextStream data(&file);
         QKeyEvent *keyEvent = static_cast<QKeyEvent*>(event);
+        qDebug()<<keyEvent->key();
         //** 改变延音效果 **//
         if (keyEvent->key() == Qt::Key_Space&&keyEvent->isAutoRepeat()==false)
         {
             TenutoChange();
         }
         //** Tab 键单独处理 **//
-        if (keyEvent->key() == Qt::Key_Tab&&keyEvent->isAutoRepeat()==false)
+//        if (keyEvent->key() == Qt::Key_Tab&&keyEvent->isAutoRepeat()==false)
+//        {
+//            tone->Tab_Key.TenutoChange(Is_tenuto_space);
+//            tone->Tab_KeyPlay(tim->elapsed());
+//            if(Is_record) data<<tone->Tab_Key;
+//            return true;
+//        }
+        if (keyEvent->key() == Qt::Key_Tab&&keyEvent->isAutoRepeat()==true)
         {
-            c->Q_Key.TenutoChange(Is_tenuto_space);
-            c->Q_KeyPlay(tim->elapsed());
-            data<<c->Q_Key;
+            return true;
+        }
+        if (keyEvent->key() == Qt::Key_E&&keyEvent->isAutoRepeat()==true)
+        {
+            return true;
+        }
+        if (keyEvent->key() == Qt::Key_W&&keyEvent->isAutoRepeat()==true)
+        {
+            return true;
+        }
+        if (keyEvent->key() == Qt::Key_Q&&keyEvent->isAutoRepeat()==true)
+        {
+            return true;
+        }
+        if (keyEvent->key() == Qt::Key_R&&keyEvent->isAutoRepeat()==true)
+        {
             return true;
         }
     }
     return false;
 };
 
-
-void MainWindow::TenutoChange(void){
-    if(Is_tenuto_space==0) Is_tenuto_space=1;
-    else Is_tenuto_space=0;
-};
 
 void MainWindow::keyPressEvent(QKeyEvent *event){
     //qDebug()<<"Enter Press";
@@ -60,12 +77,97 @@ void MainWindow::keyPressEvent(QKeyEvent *event){
     if(event->isAutoRepeat()==false){
         QTextStream data(&file);
         switch (event->key()) {
-        case Qt::Key_E:
-            c->E_Key.TenutoChange(Is_tenuto_space);
-            c->E_KeyPlay(tim->elapsed());
-            data<<c->E_Key;
-            break;
         case Qt::Key_Q:
+            tone->Q_Key.TenutoChange(Is_tenuto_space);
+            tone->Q_KeyPlay(tim->elapsed());
+            if(Is_record) data<<tone->Q_Key;
+            break;
+        case Qt::Key_W:
+            tone->W_Key.TenutoChange(Is_tenuto_space);
+            tone->W_KeyPlay(tim->elapsed());
+            if(Is_record) data<<tone->W_Key;
+            break;
+        case Qt::Key_E:
+            tone->E_Key.TenutoChange(Is_tenuto_space);
+            tone->E_KeyPlay(tim->elapsed());
+            if(Is_record) data<<tone->E_Key;
+            break;
+        case Qt::Key_R:
+            tone->R_Key.TenutoChange(Is_tenuto_space);
+            tone->R_KeyPlay(tim->elapsed());
+            if(Is_record) data<<tone->R_Key;
+            break;
+        case Qt::Key_T:
+            tone->T_Key.TenutoChange(Is_tenuto_space);
+            tone->T_KeyPlay(tim->elapsed());
+            if(Is_record) data<<tone->T_Key;
+            break;
+        case Qt::Key_Y:
+            tone->Y_Key.TenutoChange(Is_tenuto_space);
+            tone->Y_KeyPlay(tim->elapsed());
+            if(Is_record) data<<tone->Y_Key;
+            break;
+        case Qt::Key_Shift:
+            switch (tone->Level) {
+            case -4:
+                break;
+            case -3:
+                break;
+            case -2:
+                break;
+            case -1:
+                break;
+            case 0:
+                tone=&cc;
+                tone->Level=cc.Level;
+//                qDebug()<<tone->Level<<" "<<cc.Level;
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            }
+            break;
+        case Qt::Key_Control:
+            switch (tone->Level) {
+            case -4:
+                break;
+            case -3:
+                break;
+            case -2:
+                break;
+            case -1:
+                break;
+            case 0:
+//                qDebug()<<tone->Level<<" "<<cc.Level;
+                break;
+            case 1:
+                tone=&c;
+                tone->Level=c.Level;
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            }
             break;
         }
     }
@@ -103,12 +205,32 @@ void MainWindow::keyPressEvent(QKeyEvent *event){
     }
 };*/
 
+
+//***********************************************//
+//****************** 音频处理 ********************//
+//***********************************************//
+
+//** 延音改变 **//
+void MainWindow::TenutoChange(void){
+    if(Is_tenuto_space==0) Is_tenuto_space=1;
+    else Is_tenuto_space=0;
+};
+
+//** 录制音频 **//
 void MainWindow::Record(QString filename){
-    if(Is_record) Is_record=0;
-    else Is_record=1;
+    tim=new QElapsedTimer;
+    tim->start();
+    Is_record=1;
     file.setFileName(filename);
     file.open(QIODevice::WriteOnly);
 };
+void MainWindow::StopRecord(){
+    Is_record=0;
+    file.close();
+};
+
+//** 改变音调 **//
+
 MainWindow::~MainWindow()
 {
     delete ui;
