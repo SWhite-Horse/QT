@@ -42,6 +42,7 @@ public:
 
     void keyPressEvent(QKeyEvent *event);
     bool eventFilter(QObject * obj,QEvent * event); //** 特别处理Tab和Space
+    bool event(QEvent *); //** 用于拦截repeat信号
    // void keyReleaseEvent(QKeyEvent *event);
 
     //** 音频函数区 **//

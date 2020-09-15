@@ -12,38 +12,8 @@ Tone_Cc::Tone_Cc()
     Y_Key.SetVoice(40);
 }
 
-void Tone_Cc::Tab_KeyPlay(int time){
-    Tab_Key.VoicePlay();
-    Tab_Key.RecordTime(time);
-}
-
-void Tone_Cc::Q_KeyPlay(int time){
-    Q_Key.VoicePlay();
-    Q_Key.RecordTime(time);
-}
-
-void Tone_Cc::W_KeyPlay(int time){
-    W_Key.VoicePlay();
-    W_Key.RecordTime(time);
-}
-
-void Tone_Cc::E_KeyPlay(int time){
-    E_Key.VoicePlay();
-    E_Key.RecordTime(time);
-}
-
-void Tone_Cc::R_KeyPlay(int time){
-    R_Key.VoicePlay();
-    R_Key.RecordTime(time);
-}
-
-void Tone_Cc::T_KeyPlay(int time){
-    T_Key.VoicePlay();
-    T_Key.RecordTime(time);
-}
-
-void Tone_Cc::Y_KeyPlay(int time){
-    Y_Key.VoicePlay();
-    Y_Key.RecordTime(time);
+void Tone_Cc::Key_Play(PianoKey& Key,int time){
+    Key.VoicePlay();
+    Key.RecordTime(time);
 }
 

@@ -16,7 +16,7 @@ Tone_C::Tone_C()
     Key0.SetVoice(57);
     Minus_Key.SetVoice(59);
     Equal_Key.SetVoice(61);
-    Back_Key.SetVoice(63);
+    Backspace_Key.SetVoice(63);
 
     Tab_Key.SetVoice(28);
     Q_Key.SetVoice(30);
@@ -35,39 +35,14 @@ Tone_C::Tone_C()
     Backslash_Key.SetVoice(51);
 }
 
+void Tone_C::Key_Play(PianoKey & Key,int time){
+    Key.VoicePlay();
+    Key.RecordTime(time);
+};
 
-void Tone_C::Tab_KeyPlay(int time){
-    Tab_Key.VoicePlay();
-    Tab_Key.RecordTime(time);
-}
+//void Tone_C::AsciiTilde_KeyPlay(int time){
+//    AsciiTilde_Key.VoicePlay();
+//    AsciiTilde_Key.RecordTime(time);
+//};
 
-void Tone_C::Q_KeyPlay(int time){
-    Q_Key.VoicePlay();
-    Q_Key.RecordTime(time);
-}
 
-void Tone_C::W_KeyPlay(int time){
-    W_Key.VoicePlay();
-    W_Key.RecordTime(time);
-}
-
-void Tone_C::E_KeyPlay(int time){
-    E_Key.VoicePlay();
-    E_Key.RecordTime(time);
-     qDebug()<<"Tone_C";
-}
-
-void Tone_C::R_KeyPlay(int time){
-    R_Key.VoicePlay();
-    R_Key.RecordTime(time);
-}
-
-void Tone_C::T_KeyPlay(int time){
-    T_Key.VoicePlay();
-    T_Key.RecordTime(time);
-}
-
-void Tone_C::Y_KeyPlay(int time){
-    Y_Key.VoicePlay();
-    Y_Key.RecordTime(time);
-}
