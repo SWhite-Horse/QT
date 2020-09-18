@@ -30,7 +30,8 @@ public:
     Tone_C c;
     Tone_Cc cc;
 
-
+    //** 按键定义区 **//
+    PianoKey TKey[88];
     QFile file;
 
 
@@ -43,13 +44,19 @@ public:
     void keyPressEvent(QKeyEvent *event);
     bool eventFilter(QObject * obj,QEvent * event); //** 特别处理Tab和Space
     bool event(QEvent *); //** 用于拦截repeat信号
-   // void keyReleaseEvent(QKeyEvent *event);
+    void keyReleaseEvent(QKeyEvent *event);
 
     //** 音频函数区 **//
 
     void TenutoChange(void); //** 改变延音状态
     void Record(QString); //** 录音函数接口
+    void Replay(QString);
     void StopRecord();
+
+    //** 图像处理区 **//
+
+    //重写paintEvent事件 铺设背景
+    void paintEvent(QPaintEvent *);
 
     ~MainWindow();
 

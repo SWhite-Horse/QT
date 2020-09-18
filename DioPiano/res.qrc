@@ -176,5 +176,10 @@
         <file>voice/87_.wav</file>
         <file>voice/88.wav</file>
         <file>voice/88_.wav</file>
+        <file>image/backGround.jpg</file>
+        <file>image/11.png</file>
+        <file>image/12.png</file>
+        <file>image/22.png</file>
+        <file>image/21.png</file>
     </qresource>
 </RCC>

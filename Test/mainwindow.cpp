@@ -19,13 +19,6 @@ MainWindow::MainWindow(QWidget *parent)
     s= new QSound(str3);
     timr=new QTimer(this);
     tim=new QElapsedTimer;
-
-    tim->start();
-
-//    connect(timr,&QTimer::timeout,[=](){
-//        ister=1;
-//    });
-    //ss->setMedia(QUrl::fromLocalFile(":/voice/p01.mp3"));
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *event){

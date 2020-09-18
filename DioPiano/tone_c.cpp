@@ -2,7 +2,7 @@
 #include <QDebug>
 Tone_C::Tone_C()
 {
-    AsciiTilde_Key.SetVoice(16);
+    QuoteLeft_Key.SetVoice(16);
     Key1.SetVoice(18);
     Key2.SetVoice(20);
     Key3.SetVoice(21);
@@ -35,7 +35,11 @@ Tone_C::Tone_C()
     Backslash_Key.SetVoice(51);
 }
 
-void Tone_C::Key_Play(PianoKey & Key,int time){
+void Tone_C::Key_Play(PianoKey & Key){
+    Key.VoicePlay();
+};
+
+void Tone_C::Key_Play(PianoKey & Key,int time=0){
     Key.VoicePlay();
     Key.RecordTime(time);
 };

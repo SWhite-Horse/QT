@@ -15,6 +15,7 @@ public:
 
     Tone_C();
     void Key_Play(PianoKey &,int);
+    void Key_Play(PianoKey &);
 //    void AsciiTilde_KeyPlay(int);
 
     void E_KeyStop(int ms=0);;

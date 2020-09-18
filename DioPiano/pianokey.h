@@ -10,35 +10,44 @@ class PianoKey : public QPushButton
 {
     Q_OBJECT   
 private:
-    QString filename,filename_,num; //** 声音文件名的初始化 **//
-    //int Key_num; //** 用于记录按键 **//
-    QSound * V_short; //** 键盘声音的进入 **//
-    QSound * V_long; //** 键盘声音的进入 **//
-    int Pr_time; //** 用于记录按键时长 **//
-    bool Is_tenuto=0;  //** 是否延音,只用来记录，不用来判断，判断的延音在window里定义 **//
-    bool Is_LongPress=0; //** 单击or长按，同上 **//
+    QString filename,filename_; //** 声音文件名的初始化
+    int num; //** 用于记录按键
+    int BorW; //** 记录黑键还是白键
+    QSound * V_short; //** 键盘声音的进入
+    QSound * V_long; //** 键盘声音的进入
+    int Pr_time; //** 用于记录按键时长
+    int Is_tenuto=0;  //** 是否延音,只用来记录，不用来判断，判断的延音在window里定义
+
+    QString Path;//成员属性 保存图片路径
+    QPixmap pix;
 
 public:
     //explicit PianoKey(QWidget *parent = nullptr);
 
-
+    //** 构造函数，初始化琴键图片路径 **//
     PianoKey();
 
-    int SetVoice(int file_num);  //** 用于琴键初始化音乐 **//
-//    QTimer *timer=NULL;  //** 失败的延音做法
-//    bool GetPressmode(void);
-//    void PressmodeChange(void); //** Change Is_LongPress **//
-    bool GetTenuto(void);
-    void TenutoChange(bool); //** Change Is_tenuto **//
 
-    void RecordTime(int st); //** record time to make it could be replay **//
-    //void SetKeyName(QString keyname);
-
+    int SetVoice(int);  //** 用于琴键初始化音乐 **//
     void VoicePlay(void);  //** 音乐播放 **//
-//    void VoiceStop(int ms=0);  //** 音乐停止 **//
-    //bool ImageShow(void);
+
+    int SetImage(int);  //** 用于琴键初始化图片并加载显示 **//
+    void Press_Image(void);   //** 按键按下动画 **//
+    void Release_Image(void);   //** 按键按下动画 **//
+
+    int GetTenuto(void);
+    void TenutoChange(int); //** Change Is_tenuto **//
+
+    void RecordTime(int); //** record time to make it could be replay **//
+    int GetTime(void);
+
+    int GetNum(void);
+    bool GetV_S();
+
     QString Record(void);  //** 录制音乐 **//
+
     friend QTextStream& operator<<(QTextStream&,PianoKey&);
+    friend QTextStream& operator>>(QTextStream&,PianoKey&);
 signals:
 
 };

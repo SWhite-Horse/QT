@@ -15,6 +15,7 @@ public:
     Tone_Cc();
 
     void Key_Play(PianoKey &,int);
+    void Key_Play(PianoKey &);
 
 };
 
