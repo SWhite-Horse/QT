@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,10 +17,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    pianokey.cpp \
+    tone.cpp \
+    tone_c.cpp \
+    tone_cc.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    pianokey.h \
+    tone.h \
+    tone_c.h \
+    tone_cc.h
 
 FORMS += \
     mainwindow.ui
@@ -29,3 +37,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    res.qrc

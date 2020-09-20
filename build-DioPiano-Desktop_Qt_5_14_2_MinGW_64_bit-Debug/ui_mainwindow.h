@@ -12,7 +12,6 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -28,10 +27,10 @@ public:
     QAction *actionstart;
     QAction *actionstop;
     QAction *actionplay;
+    QAction *actionvstop;
     QAction *actionfresh;
-    QAction *actionbug;
+    QAction *actionerror;
     QWidget *centralwidget;
-    QListWidget *Help;
     QMenuBar *menubar;
     QMenu *menu;
     QMenu *menu_2;
@@ -51,16 +50,14 @@ public:
         actionstop->setObjectName(QString::fromUtf8("actionstop"));
         actionplay = new QAction(MainWindow);
         actionplay->setObjectName(QString::fromUtf8("actionplay"));
+        actionvstop = new QAction(MainWindow);
+        actionvstop->setObjectName(QString::fromUtf8("actionvstop"));
         actionfresh = new QAction(MainWindow);
         actionfresh->setObjectName(QString::fromUtf8("actionfresh"));
-        actionbug = new QAction(MainWindow);
-        actionbug->setObjectName(QString::fromUtf8("actionbug"));
+        actionerror = new QAction(MainWindow);
+        actionerror->setObjectName(QString::fromUtf8("actionerror"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        centralwidget->setFocusPolicy(Qt::StrongFocus);
-        Help = new QListWidget(centralwidget);
-        Help->setObjectName(QString::fromUtf8("Help"));
-        Help->setGeometry(QRect(240, 220, 734, 291));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -80,13 +77,12 @@ public:
         menubar->addAction(menu_2->menuAction());
         menubar->addAction(menu_3->menuAction());
         menu->addAction(actionquit);
-        menu_2->addSeparator();
         menu_2->addAction(actionstart);
         menu_2->addAction(actionstop);
         menu_2->addAction(actionplay);
-        menu_3->addSeparator();
+        menu_2->addAction(actionvstop);
         menu_3->addAction(actionfresh);
-        menu_3->addAction(actionbug);
+        menu_3->addAction(actionerror);
 
         retranslateUi(MainWindow);
 
@@ -100,8 +96,9 @@ public:
         actionstart->setText(QCoreApplication::translate("MainWindow", "\345\274\200\345\247\213", nullptr));
         actionstop->setText(QCoreApplication::translate("MainWindow", "\345\201\234\346\255\242", nullptr));
         actionplay->setText(QCoreApplication::translate("MainWindow", "\346\222\255\346\224\276", nullptr));
+        actionvstop->setText(QCoreApplication::translate("MainWindow", "\347\273\223\346\235\237", nullptr));
         actionfresh->setText(QCoreApplication::translate("MainWindow", "\346\225\231\347\250\213", nullptr));
-        actionbug->setText(QCoreApplication::translate("MainWindow", "\346\212\245\351\224\231", nullptr));
+        actionerror->setText(QCoreApplication::translate("MainWindow", "\346\212\245\351\224\231", nullptr));
         menu->setTitle(QCoreApplication::translate("MainWindow", "\345\274\200\345\247\213", nullptr));
         menu_2->setTitle(QCoreApplication::translate("MainWindow", "\345\275\225\345\210\266", nullptr));
         menu_3->setTitle(QCoreApplication::translate("MainWindow", "\345\270\256\345\212\251", nullptr));
