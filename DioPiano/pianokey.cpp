@@ -43,7 +43,7 @@ void PianoKey::Release_Image(){
     this->setIconSize(QSize(pix.width()*0.35,pix.height()*0.35));
 };
 
-int PianoKey::SetVoice(int file_num){
+int PianoKey::setVoice(int file_num){
     num=file_num;
     QString n;
     n.setNum(num);
@@ -51,6 +51,11 @@ int PianoKey::SetVoice(int file_num){
     filename_=":/voice/"+n+"_.wav";
     V_long = new QSound(filename);
     V_short= new QSound(filename_);
+    return file_num;
+};
+
+int PianoKey::SetVoice(int file_num){
+    num=file_num;
     return file_num;
 };
 

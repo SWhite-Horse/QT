@@ -181,5 +181,23 @@
         <file>image/21.png</file>
         <file>image/22.png</file>
         <file>image/backGround.jpg</file>
+        <file>image/background.png</file>
+        <file>image/img.png</file>
+        <file>image/img2.png</file>
+        <file>image/t0.png</file>
+        <file>image/t1.png</file>
+        <file>image/t2.png</file>
+        <file>image/t3.png</file>
+        <file>image/t4.png</file>
+        <file>image/t5.png</file>
+        <file>image/t6.png</file>
+        <file>image/t7.png</file>
+        <file>image/t8.png</file>
+        <file>image/t9.png</file>
+        <file>image/t10.png</file>
+        <file>image/t11.png</file>
+        <file>image/t12.png</file>
+        <file>image/t13.png</file>
+        <file>image/t14.png</file>
     </qresource>
 </RCC>

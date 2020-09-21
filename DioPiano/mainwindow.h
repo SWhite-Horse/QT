@@ -10,9 +10,21 @@
 #include <QDataStream>
 #include <QFile>
 #include <QKeyEvent>
-#include "tone.h"
+#include "tone_ab.h"
+#include "tone_a.h"
+#include "tone_bb.h"
+#include "tone_b.h"
+#include "tone_cb.h"
 #include "tone_c.h"
 #include "tone_cc.h"
+#include "tone_db.h"
+#include "tone_d.h"
+#include "tone_e.h"
+#include "tone_eb.h"
+#include "tone_f.h"
+#include "tone_ff.h"
+#include "tone_gb.h"
+#include "tone_g.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -25,19 +37,33 @@ class MainWindow : public QMainWindow
     bool Is_record=0;
 public:
 
+    MainWindow(QWidget *parent = nullptr);
+
     //** 音调定义区 **//
     Tone *tone;
+
+    Tone_Ab ab;
+    Tone_A a;
+    Tone_Bb bb;
+    Tone_B b;
+    Tone_Cb cb;
     Tone_C c;
     Tone_Cc cc;
+    Tone_Db db;
+    Tone_D d;
+    Tone_Eb eb;
+    Tone_E e;
+    Tone_F f;
+    Tone_Ff ff;
+    Tone_G g;
+    Tone_Gb gb;
+
+    QFile file;
+    QPixmap pix1,pix2,pix3,pix4;
+    QElapsedTimer *tim=NULL; //** 记录用的总时钟
 
     //** 按键定义区 **//
     PianoKey TKey[88];
-    QFile file;
-
-
-    QElapsedTimer *tim=NULL; //** 记录用的总时钟
-
-    MainWindow(QWidget *parent = nullptr);
 
     //** 按键函数区 **//
 
@@ -56,6 +82,7 @@ public:
 
     //重写paintEvent事件 铺设背景
     void paintEvent(QPaintEvent *);
+    void Drawmap(int);
 
     ~MainWindow();
 

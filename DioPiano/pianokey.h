@@ -24,11 +24,11 @@ private:
 public:
     //explicit PianoKey(QWidget *parent = nullptr);
 
-    //** 构造函数，初始化琴键图片路径 **//
     PianoKey();
 
 
-    int SetVoice(int);  //** 用于琴键初始化音乐 **//
+    int SetVoice(int);  //** 用于琴键初始化音乐文件名 **//
+    int setVoice(int);  //** 重载版本，这个函数会创建子线程 **//
     void VoicePlay(void);  //** 音乐播放 **//
 
     int SetImage(int);  //** 用于琴键初始化图片并加载显示 **//

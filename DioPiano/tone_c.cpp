@@ -44,7 +44,3 @@ void Tone_C::Key_Play(PianoKey & Key,int time=0){
     Key.RecordTime(time);
 };
 
-//void Tone_C::AsciiTilde_KeyPlay(int time){
-//    AsciiTilde_Key.VoicePlay();
-//    AsciiTilde_Key.RecordTime(time);
-//};

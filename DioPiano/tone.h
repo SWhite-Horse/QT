@@ -19,38 +19,6 @@ public:
 
     virtual void Key_Play(PianoKey &,int){};
     virtual void Key_Play(PianoKey &){};
-//    virtual void AsciiTilde_KeyPlay(int){};
-//    virtual void Key1_Play(int){};
-//    virtual void Key2_Play(int){};
-//    virtual void Key3_Play(int){};
-//    virtual void Key4_Play(int){};
-//    virtual void Key5_Play(int){};
-//    virtual void Key6_Play(int){};
-
-//    virtual void Key7_Play(int){};
-//    virtual void Key8_Play(int){};
-//    virtual void Key9_Play(int){};
-//    virtual void Key0_Play(int){};
-//    virtual void Minus_KeyPlay(int){};
-//    virtual void Equal_KeyPlay(int){};
-//    virtual void Backspace_KeyPlay(int){};
-
-//    virtual void Tab_KeyPlay(int){};
-//    virtual void Q_KeyPlay(int){};
-//    virtual void W_KeyPlay(int){};
-//    virtual void E_KeyPlay(int){};
-//    virtual void R_KeyPlay(int){};
-//    virtual void T_KeyPlay(int){};
-//    virtual void Y_KeyPlay(int){};
-
-//    virtual void U_KeyPlay(int){};
-//    virtual void I_KeyPlay(int){};
-//    virtual void O_KeyPlay(int){};
-//    virtual void P_KeyPlay(int){};
-//    virtual void BracketLeft_KeyPlay(int){};
-//    virtual void BracketRight_KeyPlay(int){};
-//    virtual void Backslash_KeyPlay(int){};
-
 };
 
 #endif // TONE_H

@@ -20,15 +20,41 @@ SOURCES += \
     mainwindow.cpp \
     pianokey.cpp \
     tone.cpp \
+    tone_a.cpp \
+    tone_ab.cpp \
+    tone_b.cpp \
+    tone_bb.cpp \
     tone_c.cpp \
-    tone_cc.cpp
+    tone_cb.cpp \
+    tone_cc.cpp \
+    tone_d.cpp \
+    tone_db.cpp \
+    tone_e.cpp \
+    tone_eb.cpp \
+    tone_f.cpp \
+    tone_ff.cpp \
+    tone_g.cpp \
+    tone_gb.cpp
 
 HEADERS += \
     mainwindow.h \
     pianokey.h \
     tone.h \
+    tone_a.h \
+    tone_ab.h \
+    tone_b.h \
+    tone_bb.h \
     tone_c.h \
-    tone_cc.h
+    tone_cb.h \
+    tone_cc.h \
+    tone_d.h \
+    tone_db.h \
+    tone_e.h \
+    tone_eb.h \
+    tone_f.h \
+    tone_ff.h \
+    tone_g.h \
+    tone_gb.h
 
 FORMS += \
     mainwindow.ui
